@@ -56,9 +56,63 @@ public class Main {
 }
 
 
+// Operators and Expressions
+// +,-,*,/, %, &&, ||, >,<,<=,>=,!=
+int a = 10, b = 3;
+System.out.println("a + b = "+(a+b));
+System.out.println("a - b = "+(a-b));
+System.out.println("a * b = "+(a*b));
+System.out.println("a / b = "+(a/b));
+System.out.println("a % b = "+(a%b));
 
+double x = 10, y = 3;
+System.out.println("x / y = "+(x/y));
 
+// Relational operators (return bool: 1 or 0)
+System.out.println("\nx == y = "+(x==y));
+System.out.println("x != y = "+(x!=y));
+System.out.println("x > y = "+(x>y));
+System.out.println("x < y = "+(x<y));
+System.out.println("x >= y = "+(x>=y));
+System.out.println("x <= y = "+(x<=y));
 
+// Logical Operators
+boolean p = true, q = false;
+    System.out.println("\np && q: "+(p&&q)); // AND
+    System.out.println("p || q: "+(p||q)); // OR
+    System.out.println("!p : "+(!p)); // NOT TRUE
+    System.out.println("!q : "+(!q)); // NOT FALSE
+
+// Assignment Operators
+// +=, -=, *=, /=
+int score = 50;
+score += 10;
+System.out.printl("\nscore after += 10: "+score);
+score *= 2;
+System.out.printl("score after *= 2: "+score);
+
+// Increment / Decrement Operators
+int counter = 5;
+    System.out.println("\ncounter++ (post): "+counter++);//5
+    System.out.println("counter now: "+counter++);/;//6
+    System.out.println("++counter (pre): "++counter);//7
+
+// Control Flow(if/else, switch case, loops(for, while, do while))
+
+System.out.println("Enter your exam score: ";);
+    int Examscore = scanner.nextInt();
+
+    if (Examscore >= 90){
+        System.out.println("Grade: A");
+    } else if (Examscore >= 80){
+        System.out.println("Grade: B");
+    } else if (Examscore >= 70){
+        System.out.println("Grade: C");
+    } else{
+        System.out.println("Grade: F");
+    }
+
+// SWITCH CASE STATEMENT
 
 
 
