@@ -1,1 +1,66 @@
+// JAVA PROGRAMMING LANGUAGE
+
+// SYNTAX
+//CODE PROPER
+public class Main {
+        public static void main(String[]args){
+                System.out.println("Hello, World!");
+        }
+    }
+// Data Types
+int - Whole number
+double // double precision of decimal number
+float // single precision of decimal number 'f'
+char // single character of text (single quotes)
+boolean // True or False
+String / not primitive text
+
+// Declaring variables of different data types ---
+int         age          =      20      ;
+^            ^           ^      ^       ^
+types    variables       EQ    value   close tag
+double price = 20.30;
+float weight = 70.6f;
+char grade = 'A';
+boolean isStudent = true;
+String name = "Alice";
+
+//--- Output using System.out.println---
+System.out.println("Name: " +name); // Alice
+System.out.println("Age: " +age); // 20
+System.out.println("Price: " +price); // 20.30
+System.out.println("Weight: " +weight); // 70.60
+System.out.println("Grade: " +grade); // A
+System.out.println("Is Student? " +isStudent); // True
+
+//--- Getting input using Scanner ---
+import java.util.Scanner;// Syntax for calling the 
+//Input function on the variable in the module Scanner 
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+    // Reading the one word(stops at whitespace)
+    System.out.print("\nEnter your city: ");
+    String userCity = scanner.next(); // reads one word
+    System.out.println("You live in: "+userCity);
+
+    // Reading the full line (including spaces)
+    scanner.nextLine()// clears leftover newline from previous next()
+    System.out.print("\nEnter a sentence about yourself: ");
+    String fullSentence = scanner.nextLine();// reads the entire line or paragraph
+    System.out.println("You said: "+fullSentence);
+
+    scanner.close();
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 
