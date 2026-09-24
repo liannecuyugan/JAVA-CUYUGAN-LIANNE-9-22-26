@@ -1,0 +1,82 @@
+import java.util.Scanner; //Syntax for calling the Input function on the variable in the module Scanner
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+ 
+        int age = 20;
+        double price = 20.30;
+        float weight = 70.6f;
+        char grade = 'A';
+        boolean isStudent = true;
+        String name = "Alice";
+ 
+        System.out.println("Name: " + name);//Alice
+        System.out.println("Age: " + age);//20
+        System.out.println("Price: " + price);//20.30
+        System.out.println("Weight: " + weight);//70.60
+        System.out.println("Grade: " + grade);//A
+        System.out.println("Is Student? " + isStudent);//True
+        System.out.print("\nEnter your city: ");
+        String userCity = scanner.next(); 
+        System.out.println("You live in: "+ userCity);
+ 
+        scanner.nextLine();
+        System.out.print("\nEnter a sentence about yourself: ");
+        String fullSentence = scanner.nextLine(); 
+        System.out.println("You said: "+ fullSentence);
+ 
+        int a = 10, b = 3;
+        System.out.println("a + b = " + (a+b));
+        System.out.println("a - b = " + (a-b));
+        System.out.println("a * b = " + (a*b));
+        System.out.println("a / b = " + (a/b));
+        System.out.println("a % b = " + (a%b));
+ 
+        double x = 10, y = 3;
+        System.out.println("x / y = " + (x/y));
+ 
+        //Relational Operators (return bool: true or false)
+        System.out.println("\na == b = " + (a==b));
+        System.out.println("a != b = " + (a!=b));
+        System.out.println("a > b = " + (a>b));
+        System.out.println("a < b = " + (a<b));
+        System.out.println("a >= b = " + (a>=b));
+        System.out.println("a <= b = " + (a<=b));
+ 
+        boolean p = true, q = false;
+        System.out.println("\np && q: = " + (p&&q));// AND
+        System.out.println("p || q: = " + (p||q));// OR
+        System.out.println("!p: = " + (!p));// NOT TRUE
+        System.out.println("!q: = " + (!q));// NOT FALSE
+ 
+        int score = 50;
+        score += 10;
+        System.out.println("\nscore after += 10: "+score);
+        score *= 2;
+        System.out.println("score after *= 2: "+score);
+ 
+        int counter = 5;
+        System.out.println("\ncounter++ (post): "+ counter++);//5
+        System.out.println("counter++ now: "+ counter++);//6
+        System.out.println("++counter (pre): "+ counter++);//7
+ 
+        System.out.println("\nEnter your exam score: ");
+        int Examscore = scanner.nextInt();
+ 
+        if (Examscore >= 90){
+            System.out.print("Grade: A");
+        }
+        else if (Examscore >= 80){
+            System.out.print("Grade: B");
+        }
+        else if (Examscore >= 70){
+            System.out.print("Grade: C");
+        }
+        else{
+            System.out.print("Grade: F");
+        }
+ 
+        
+        scanner.close(); 
+    }
+}
